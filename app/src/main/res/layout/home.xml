@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_current"
+    android:background="@drawable/background9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="용인"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:id="@+id/yongin"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="날씨"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:id="@+id/weather"
+            />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="용인"
+                    android:textSize="30dp"
+                    android:padding="10dp"
+                    android:id="@+id/temp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="날씨"
+                    android:textSize="30dp"
+                    android:padding="10dp"
+                    android:id="@+id/weather_current"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:id="@+id/date"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+        </LinearLayout>
+        <ViewFlipper
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:id="@+id/image_slide"
+            >
+
+
+        </ViewFlipper>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="#009A4D4D"
+                android:src="@drawable/btn_facebook"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/btn_youtube"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/insta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/btn_insta"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/btn_blog">
+
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
